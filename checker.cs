@@ -50,6 +50,11 @@ class Checker
     static int Main() {
         ExpectTrue(batteryIsOk(25, 70, 0.7f));
         ExpectFalse(batteryIsOk(50, 85, 0.0f));
+        
+        ExpectFalse(batteryIsOk(-10, 30, 0.5f);
+        ExpectFalse(batteryIsOk(40, -5, 0.3f);
+        ExpectFalse(batteryIsOk(35, 15, 4.0f);
+        
         Console.WriteLine("All ok");
         return 0;
     }
